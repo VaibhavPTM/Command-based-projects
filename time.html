@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            my clock
+        </title>
+    </head>
+    <body>
+        <script>
+            let a;
+            let date;
+            let time;
+            setInterval(() => {                              
+                a=new Date();
+                date= a.toLocaleDateString();
+                time=a.getHours()+':'+a.getMinutes()+':'+a.getSeconds();
+                document.getElementById('time').innerHTML=time+" on "+date; 
+            },1000);
+        </script>
+        
+        <h1><center> you can show time here
+        </center></h1>
+        <h3>currunt time and date is :<span id="time"></span>
+        </h3>
+        
+
+        
+    </body>
+</html>
